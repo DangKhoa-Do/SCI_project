@@ -30,8 +30,8 @@
 #define RSKRX65N_2MB_H
 
 /* Local defines */
-#define LED_ON              (0)
-#define LED_OFF             (1)
+#define LED_ON              1
+#define LED_OFF             0
 #define SET_BIT_HIGH        (1)
 #define SET_BIT_LOW         (0)
 #define SET_BYTE_HIGH       (0xFF)
@@ -51,8 +51,6 @@
 
 /* LEDs */
 
-#define LED_ON				1
-#define LED_OFF				0
 
 #define LED0_PDR            PORT7.PDR.BIT.B3
 #define LED1_PDR            PORTG.PDR.BIT.B7

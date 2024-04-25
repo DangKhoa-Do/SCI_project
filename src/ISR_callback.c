@@ -10,14 +10,14 @@
 #include "rskrx65n_2mb.h"
 
 void cb_switchpressed1(void){
-	LED0_PDR=0;
-	LED1_PDR=0;
-	LED2_PDR=0;
-	LED3_PDR=0;
+	LED0_PDR=LED_OFF;
+	LED1_PDR=LED_OFF;
+	LED2_PDR=LED_OFF;
+	LED3_PDR=LED_OFF;
 }
 void cb_switchpressed2(void){
-	LED0_PDR=1;
-	LED1_PDR=1;
-	LED2_PDR=1;
-	LED3_PDR=1;
+	LED0_PDR=LED_ON;
+	LED1_PDR=LED_ON;
+	LED2_PDR=LED_ON;
+	LED3_PDR=LED_ON;
 }

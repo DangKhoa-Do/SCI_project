@@ -10,7 +10,7 @@
       <Category Name="src">
         <Path>src\ISR_callback.c</Path>
         <Path>src\ISR_callback.h</Path>
-        <Path>src\ProjectSCI.c</Path>
+        <Path>src\main.c</Path>
         <Path>src\rskrx65n_2mb.h</Path>
         <Category Name="smc_gen">
           <Category Name="Config_ICU">
@@ -566,7 +566,7 @@
         </LibraryGenerateOptions>
         <LinkOrder>
           <Path>HardwareDebug\src\ISR_callback.obj</Path>
-          <Path>HardwareDebug\src\ProjectSCI.obj</Path>
+          <Path>HardwareDebug\src\main.obj</Path>
           <Path>HardwareDebug\src/smc_gen/Config_ICU\Config_ICU.obj</Path>
           <Path>HardwareDebug\src/smc_gen/Config_ICU\Config_ICU_user.obj</Path>
           <Path>HardwareDebug\src/smc_gen/general\r_cg_hardware_setup.obj</Path>

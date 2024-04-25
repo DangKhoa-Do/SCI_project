@@ -73,30 +73,37 @@ void main(void)
 				sci_err = R_SCI_Receive(sci_handle,&received_char,1);
 		}while (sci_err==SCI_ERR_INSUFFICIENT_DATA);
 		//to do after received character
+		if(received_char=='a'){
+					LED0_PDR=LED_ON;
+					LED1_PDR=LED_ON;
+					LED2_PDR=LED_ON;
+					LED3_PDR=LED_ON;
+				R_SCI_Send(sci_handle,"LEDs ON\n",9);
+				}
 		if(received_char=='r'){
 			LED0_PDR=LED_OFF;
 			LED1_PDR=LED_OFF;
 			LED2_PDR=LED_OFF;
 			LED3_PDR=LED_OFF;
-		R_SCI_Send(sci_handle,"LED OFF",8);
+		R_SCI_Send(sci_handle,"LEDs OFF\n",9);
 		}
 		else{
 			switch (received_char){
 			case '1':
 				LED0_PDR=LED_ON;
-				R_SCI_Send(sci_handle,"LED 0 ON ",9);
+				R_SCI_Send(sci_handle,"LED 0 ON\n",9);
 				break;
 			case '2':
 				LED1_PDR=LED_ON;
-				R_SCI_Send(sci_handle,"LED 1 ON ",8);
+				R_SCI_Send(sci_handle,"LED 1 ON\n",9);
 				break;
 			case '3':
 				LED2_PDR=LED_ON;
-				R_SCI_Send(sci_handle,"LED 2 ON ",8);
+				R_SCI_Send(sci_handle,"LED 2 ON\n",9);
 				break;
 			case '4':
 				LED3_PDR=LED_ON;
-				R_SCI_Send(sci_handle,"LED 3 ON ",8);
+				R_SCI_Send(sci_handle,"LED 3 ON\n",9);
 				break;
 			}
 
