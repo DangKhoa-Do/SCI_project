@@ -57,7 +57,6 @@ void R_Config_ICU_Create_UserInit(void)
 {
     /* Start user code for user init. Do not edit comment generated here */
     /* End user code. Do not edit comment generated here */
-
 }
 
 /***********************************************************************************************************************
@@ -74,11 +73,9 @@ void R_Config_ICU_Create_UserInit(void)
 #endif
 static void r_Config_ICU_irq11_interrupt(void)
 {
-
-	/* Start user code for r_Config_ICU_irq11_interrupt. Do not edit comment generated here */
+    /* Start user code for r_Config_ICU_irq11_interrupt. Do not edit comment generated here */
 	cb_switchpressed1();
 	/* End user code. Do not edit comment generated here */
-
 }
 
 /***********************************************************************************************************************
@@ -98,7 +95,6 @@ static void r_Config_ICU_irq13_interrupt(void)
     /* Start user code for r_Config_ICU_irq13_interrupt. Do not edit comment generated here */
 	cb_switchpressed2();
 	/* End user code. Do not edit comment generated here */
-
 }
 
 /* Start user code for adding. Do not edit comment generated here */
